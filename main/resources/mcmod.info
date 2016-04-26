@@ -1,0 +1,16 @@
+[
+{
+  "modid": "eternalpower",
+  "name": "Eternal Power",
+  "description": "Brings a whole new level to power generation and management",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["DreadEnd (EterniaLogic)"],
+  "credits": "FML! OpenSource code from all large mods on GitHub",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
