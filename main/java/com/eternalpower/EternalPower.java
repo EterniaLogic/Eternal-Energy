@@ -7,6 +7,7 @@ import com.eternalpower.client.ClientProxy;
 import com.eternalpower.client.CreativeTabsMod;
 import com.eternalpower.client.GuiHandler;
 import com.eternalpower.client.render.EnderPongReactorRender;
+import com.eternalpower.client.render.EnderReactorItemRender;
 import com.eternalpower.common.blocks.EnderPongReactorBlock;
 import com.eternalpower.common.blocks.TileEntityEnderPongReactor;
 import com.eternalpower.config.Config;
@@ -16,8 +17,10 @@ import net.minecraft.item.Item;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.ItemMeshDefinition;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.client.MinecraftForgeClient;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -102,7 +105,8 @@ public class EternalPower
     	enderPongReactor.setCreativeTab(EternalPower.getCreativeTab());
     	GameRegistry.registerTileEntity(TileEntityEnderPongReactor.class, "enderPongReactorTileEntity");
     	NetworkRegistry.INSTANCE.registerGuiHandler(this, this.proxy);
-    	Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(enderPongReactor), 0, new ModelResourceLocation(MODID + ":models/block/enderReactor.obj", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(Item.getItemFromBlock(enderPongReactor), 0, new ModelResourceLocation(MODID + ":models/block/enderReactor.obj", "inventory"));
+    	
 		//RenderingRegistry.registerEntityRenderingHandler(EnderPongReactorTileEntity.class, new EnderPongReactorRender());
     	//NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
     	

@@ -36,7 +36,8 @@ public class EnderPongReactorRender extends TileEntitySpecialRenderer {
 		super();
 		
 		try {
-			ResourceLocation loc = new ResourceLocation("eternalpower", "models/block/enderReactor.obj");
+			//ResourceLocation loc = new ResourceLocation("eternalpower", "models/block/enderReactor.obj");
+			ResourceLocation loc = new ResourceLocation("eternalpower", "models/block/SchematicCreator.obj");
 			//System.out.println("TTTTTTTTTs "+loc.getResourcePath());
 			
 			model = (OBJModel) OBJLoader.instance.loadModel(loc);
@@ -110,6 +111,8 @@ public class EnderPongReactorRender extends TileEntitySpecialRenderer {
 		try{
 			GL11.glPushMatrix(); 
 			GL11.glTranslated(x+0.5, y+0.5, z+0.5); // This is necessary to make our rendering happen in the right place.
+			GL11.glDisable(GL11.GL_CULL_FACE);
+			GL11.glCullFace(GL11.GL_FRONT_AND_BACK);
 			//GL11.glScaled(1/16.f, 1/16.f, 1/16.f);
 			Tessellator tessellator = Tessellator.getInstance();
 	    	this.bindTexture(getTextureLocation());
@@ -125,6 +128,8 @@ public class EnderPongReactorRender extends TileEntitySpecialRenderer {
 			tessellator.draw();
 			
 			
+			GL11.glCullFace(GL11.GL_BACK);
+			GL11.glEnable(GL11.GL_CULL_FACE);
 	    	GL11.glPopMatrix();
 	    	
 	    	
@@ -157,7 +162,8 @@ public class EnderPongReactorRender extends TileEntitySpecialRenderer {
 	
 	
     public ResourceLocation getTextureLocation(){
-    	return new ResourceLocation("eternalpower", "textures/block/enderReactor.png");
+    	//return new ResourceLocation("eternalpower", "textures/block/enderReactor.png");
+    	return new ResourceLocation("eternalpower", "textures/block/SchematicCreator.png");
     }
 }
 
