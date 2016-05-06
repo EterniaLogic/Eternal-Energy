@@ -3,7 +3,7 @@ Minecraftforge Mod, dealing with power systems and electrical engineering (Minec
 
 This mod is being designed to be practical in a typical minecraft world, while also practicing simple to complex electrical circuits in an easy way. It is understandable that some people may not even want to come close to these ideas and learn them, so a sharing system will be implemented.
 
-Ideas for this mod come directly out of electrical engineering and the corresponding units (Voltage, Amperage, Resistance and Amperage) However, the central idea for this mod is to help people understand what specific modules do with a simple interface.
+Ideas for this mod come directly out of electrical engineering and the corresponding units (Voltage, Amperage, Resistance and Wattage) However, the central idea for this mod is to help people understand what specific modules do with a simple interface.
 
 ## What does this bring to the table? What can I expect? ##
 * Initial to End-game power solutions which range from 0.01 rf/t to 1.5B RF/t (Measured in Wh to gWh)
@@ -13,7 +13,7 @@ Ideas for this mod come directly out of electrical engineering and the correspon
 * Circuit and Radio Communications block based development. Players can share schematics so others do not have to struggle with the basics (Internet required)
 
 ## What is the point in this mod being so complex? ##
-Players can have the final say in what they want to do in minecraft. Want an item that shields you using nanorobots? Ok. Want a satellite that can pass messages or items across the world?
+Players can have the final say in what they want to do in minecraft. Want an item that shields you using nanorobots? Ok. Want a satellite that can pass messages, liquids, RF Signals or items across the world? Yay!
 
 ### Blocks ###
 * **Ender Reactor**: Generates power from The End with low-frequency mass oscillations, unrelated to the Schematic system.
